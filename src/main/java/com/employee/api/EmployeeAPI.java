@@ -22,7 +22,7 @@ import com.employee.service.EmployeeService;
 
 @RestController
 @RequestMapping(value ="/employee")
-public class CustomerAPI {
+public class EmployeeAPI {
     
 	@Autowired
 	private EmployeeService employeeService;
@@ -30,6 +30,7 @@ public class CustomerAPI {
 	@Autowired
 	private Environment environment;
 	
+
 	@GetMapping(value="/employees")
 	public ResponseEntity<List<EmployeeDTO>>getAllEmployees()throws EmployeeException{
 			List<EmployeeDTO> employeeDTOs = employeeService.getAllEmployees();

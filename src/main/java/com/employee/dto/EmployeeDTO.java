@@ -1,7 +1,9 @@
 package com.employee.dto;
 
 public class EmployeeDTO {
-    private Integer employeeId;
+    
+
+	private Integer employeeId;
 	public Integer getEmployeeId() {
 		return employeeId;
 	}
@@ -12,6 +14,8 @@ public class EmployeeDTO {
 	private String name;
 	private String emailId;
 	private String designation;
+	
+	
 	
 	public String getName() {
 		return name;

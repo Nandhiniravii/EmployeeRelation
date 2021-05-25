@@ -15,10 +15,15 @@ import com.employee.exception.EmployeeException;
 import com.employee.repository.EmployeeRepository;
 @Service(value="employeeService")
 @Transactional
-public class EmployeeServiceImpl implements EmployeeService {
+public class EmployeeServiceImpl implements EmployeeService { 
    
 	@Autowired
 	private EmployeeRepository employeeRepository;
+	
+	 @Override
+	    public Employee getEmployeeByName(String name) {
+	        return employeeRepository.findByName(name);
+	    }
 	
 	@Override
 	public  EmployeeDTO getEmployee(Integer employeeId)throws  EmployeeException{

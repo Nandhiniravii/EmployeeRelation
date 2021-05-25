@@ -1,13 +1,17 @@
 package com.employee;
 
-import org.junit.jupiter.api.Test;
+
+
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class EmployeeApplicationTests {
-
+public class EmployeeApplicationTests {
+	
 	@Test
 	void contextLoads() {
+		
 	}
-
+	
 }
+
