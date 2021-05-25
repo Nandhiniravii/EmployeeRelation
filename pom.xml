@@ -34,7 +34,7 @@
 			<scope>runtime</scope>
 			<optional>true</optional>
 		</dependency>
-		
+<!-- 	dependency for connecting to mysql database	 -->
 		<dependency>
 			<groupId>mysql</groupId>
 			<artifactId>mysql-connector-java</artifactId>
